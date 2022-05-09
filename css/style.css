@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400&family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /* ---------- FONTES ---------- */
+    --pppns : 'Poppins','Arial',sans-serif;
+    --mtsrt : 'Montserrat','Arial',sans-serif;
+    --mrrwt : 'Merriweather Sans','Arial',sans-serif;
+    /* ---------- PALETA ---------- */
+    --yell : #E6E211;
+    --blue : #002775;
+    --lgre : #7ED956;
+    --dgre : #4CB050;
+    --blck : #000000;
+    --whte : #FFFFFF;
+}
+
+/* ------------------------------ C A B E Ç A L H O ------------------------------ */
+
+header{
+    background-image: url(../media/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: 1270px 650px;
+    background-position: center center;
+    padding-top: 10px;
+
+    height: 640px;
+}
+
+.header-bar{
+    height: 100px;
+    margin-top: -10px;
+    margin-bottom: 150px;
+    position: relative;
+
+    background-color: #FFFFFF80;
+
+}
+
+.header-logo{
+    padding-left: 90px;
+    float: left;
+}
+
+.header-logo > img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-nav-menu-ul{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%);
+}
+
+.header-nav-menu-item{
+    display: inline;
+    font: bold normal 1rem var(--mrrwt);
+    color: var(--blue);
+    margin: 0 40px;
+}
+
+.header-nav-menu-item:hover{
+    color: var(--lgre);
+    transition-duration: 0.25s;
+}
+
+.header-promo{
+    display: grid;
+    grid-template-columns: 60% 30%;
+}
+
+.header-promo-text{
+    margin-top: -45px;
+
+    padding-left: 170px;
+}
+
+.header-promo-text-h1{
+    font: bold normal 3.5em var(--pppns);
+    color: var(--dgre);
+
+    text-align: justify;
+
+    padding-bottom: 20px;
+
+    line-height: 65px;
+
+    text-shadow: 1px 1px var(--whte);
+}
+
+.header-promo-text-h1:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;
+}
+
+.header-promo-text-h2{
+    font: normal normal 1.25em var(--mrrwt);
+    color: var(--blue);
+
+    text-align: justify;
+
+    line-height: 34px;
+}
+
+.header-promo-text-h2:hover{
+    transform: scale(1.05,1.05);
+    transition-duration: 0.5s;
+}
+
+.header-promo-image > img{
+    margin-top: 0px;
+
+    float: right;
+}
+
+.header-promo-image > img:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;
+}
+
+/* ------------------------------ M A I N ------------------------------ */
+
+/* ------------------------------ Sobre ------------------------------ */
+
+.main-sobre{
+    margin-top: 180px;
+    margin-bottom: 90px;
+}
+
+.main-sobre-frame{
+    width: 90%;
+    margin: auto;
+
+    background-image: url(../media/bgsecao.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+
+    border: 1px solid #CFCFCF;
+    border-radius: 20px;
+
+    box-shadow: 12.5px 7.5px var(--yell);
+}
+
+.div-grid-sobre{
+    display: grid;
+    grid-template-columns: 50% 40%;
+    column-gap: 10%;
+
+    padding-bottom: 25px;
+}
+
+.main-sobre-text{
+    font: normal normal 1.25rem var(--mrrwt);
+    color: var(--blue);
+
+    text-align: justify;
+
+    line-height: 34px;
+
+    margin-left: 40px;
+}
+
+.main-sobre-img{
+    width: 370px;
+    height: 370px;
+    
+    margin-top: 15px;
+}
+
+.main-sobre-img:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;
+}
+
+/* ------------------------------ Qualidades ------------------------------ */
+
+.main-qualidades{
+    margin-top: 90px;
+    margin-bottom: 90px;
+    padding: 0px 80px;
+}
+
+.main-qualidades-frame{
+    display: grid;
+    grid-template-columns: 5% 27.5% 68.5%;
+
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.main-qualidades-frame-numero{
+    border-right: 2px solid var(--whte);
+    background-color: var(--dgre);
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    display: flex;
+    text-align: center;
+}
+
+.p-qualidade-numero{
+    font: bold normal 2.5rem var(--pppns);
+    color: var(--whte);
+
+    margin: auto;
+}
+
+.main-qualidades-frame-icon-1{
+    background: linear-gradient(#4CB050A6, #4CB050A6),
+    url(../media/img-qualidade-nacional.jpg);
+
+    background-position: top center;
+
+    border-right: 2px solid var(--whte);
+    display: flex;
+}
+
+.main-qualidades-frame-icon-2{
+    background: linear-gradient(#4CB050A6, #4CB050A6),
+    url(../media/img-qualidade-ma.jpg);
+
+    background-position: center center;
+
+    border-right: 2px solid var(--whte);
+    display: flex;
+}
+
+.main-qualidades-frame-icon-3{
+    background: linear-gradient(#4CB050A6, #4CB050A6),
+    url(../media/img-qualidade-variedadejpg.jpg);
+
+    background-position: left center;
+
+    border-right: 2px solid var(--whte);
+    display: flex;
+}
+
+.main-qualidades-frame-icon-4{
+    background: linear-gradient(#4CB050A6, #4CB050A6),
+    url(../media/img-qualidade-barato.jpg);
+
+    background-position: top center;
+
+    border-right: 2px solid var(--whte);
+    display: flex;
+}
+
+.main-qualidades-frame-icon-5{
+    background: linear-gradient(#4CB050A6, #4CB050A6),
+    url(../media/img-qualidade-saudavel.jpg);
+
+    background-position: center center;
+
+    border-right: 2px solid var(--whte);
+    display: flex;
+}
+
+.icn-qualidades{
+    color: var(--whte);
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+.p-qualidade-nome{
+    font: normal normal 1.6rem var(--mrrwt);
+    color: var(--whte);
+
+    text-align: left;
+    margin: auto;
+    width: 100%;
+}
+
+.main-qualidades-frame-text{
+    background-color: var(--blue);
+
+    padding: 40px 15px;
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.p-qualidade-desc{
+    font: normal normal 1.1rem var(--mrrwt);
+    color: var(--yell);
+
+    line-height: 1.75rem;
+    text-align: center;
+}
+
+/* ------------------------------ Produtos ------------------------------ */
+
+.main-produtos{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.main-produtos-frame{
+    width: 85%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    column-gap: 3.5%;
+}
+
+.main-produtos-frame-prod{
+    border: 1px solid #CFCFCF;
+    border-radius: 10px;
+
+    margin-bottom: 75px;
+
+    box-shadow: 10px 10px var(--yell);
+}
+
+.main-produtos-frame-prod:hover{
+    transform: scale(1.15,1.15);
+    transition-duration: 0.5s;
+}
+
+.main-produtos-frame-prod-img{
+    width: 100px;
+    height: 100px;
+
+    display: block;
+    margin: 30px auto 25px auto;
+}
+
+.main-produtos-frame-prod-ttl{
+    font: bold normal 1.5rem var(--pppns);
+    color: var(--yell);
+    text-shadow: 2px 2px var(--blue);
+
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.main-produtos-frame-prod-txt{
+    font: normal normal 0.9rem var(--mrrwt);
+    color: var(--blue);
+
+    text-align: center;
+
+    line-height: 1.35rem;
+
+    margin-bottom: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+/* ------------------------------ Contato ------------------------------ */
+
+.main-contato{
+    background-color: var(--dgre);
+    padding-bottom: 40px;
+}
+
+.main-contato-frame{
+    width: 85%;
+    margin: auto auto 35px auto;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.icn-contato{
+    color: var(--whte);
+    width: 20px;
+    height: 20px;
+    padding-right: 45px;
+}
+
+.main-contato-frame-list{
+    padding-right: 30px;
+}
+
+.main-contato-frame-list-line{
+    font: normal normal 1.25rem var(--mrrwt);
+    color: var(--yell);
+
+    padding: 20px 0px;
+    line-height: 20px;
+
+    border-bottom: 2px solid var(--whte);
+}
+
+.main-contato-frame-list-line:last-of-type{
+    border-bottom: none;
+}
+
+.main-contato-frame-mapa{
+    padding-left: 30px;
+}
+
+.main-contato-redes-ttl{
+    font: normal normal 1.55rem var(--mrrwt);
+    color: var(--whte);
+
+    text-align: center;
+
+    margin: auto;
+    padding-bottom: 35px;
+    width: 60%;
+
+    border-bottom: 5px solid var(--whte);
+}
+
+.main-contato-redes-btn-wrapper{
+    width: 70%;
+    margin: 30px auto auto auto;
+
+    display: flex;
+}
+
+.main-contato-redes-btn{
+    width: 25%;
+    font: 300 normal 1.25rem var(--mtsrt);
+
+    padding: 5px 10px;
+    border: none;
+}
+
+.fa-brands{
+    padding-right: 10px;
+}
+
+#mc-fb{
+    background-color: #4867AA;
+    color: var(--whte);
+}
+
+#mc-fb:hover{
+    background-color: var(--whte);
+    color: #4867AA;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+#mc-ig{
+    background-color: #D72F76;
+    color: #F6C869;
+}
+
+#mc-ig:hover{
+    background-color: #F6C869;
+    color: #D72F76;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+#mc-li{
+    background-color: #0075B3;
+    color: var(--whte);
+}
+
+#mc-li:hover{
+    background-color: var(--whte);
+    color: #0075B3;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+#mc-tt{
+    background-color: #28A4D8;
+    color: var(--whte);
+}
+
+#mc-tt:hover{
+    background-color: var(--whte);
+    color: #28A4D8;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+/* ------------------------------ G E R A I S ------------------------------ */
+
+.header-title-section{
+    font: 600 normal 2.2rem var(--pppns);
+    color: var(--dgre);
+
+    text-align: center;
+
+    padding-bottom: 20px;
+    padding-top: 25px;
+}
+
+.span-underline{
+    text-decoration: underline;
+}
+
+.span-mark{
+    background-color: var(--yell);
+}
+
+.animation-underline{
+    display: inline-block;
+    position: relative;
+}
+
+.animation-underline::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--lgre);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.animation-underline:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.bg-left{
+    background: url(../media/bgsecao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+.bg-center{
+    background: url(../media/bgsecao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-right{
+    background: url(../media/bgsecao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+}
+
+#ht-white{
+    color: var(--whte);
+}
